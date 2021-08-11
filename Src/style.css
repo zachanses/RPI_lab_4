@@ -1,0 +1,247 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Microsoft Sans Serif;
+    background-color: #fbfbfb;
+    color: #5c646e;
+}
+
+h1 {
+    margin: 0;
+    line-height: normal;
+    color: #a5adb8;
+    text-transform: capitalize;
+}
+
+h1::first-letter {
+    color: #ae4b5d;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.app__header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+    border-bottom: 10px solid #f5f5f098;
+}
+
+.app__header-text h1 {
+    font-size: 35px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 24px;
+    text-decoration: none;
+    color: #a5adb8;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+.app__header-text p {
+    margin: 0;
+    line-height: 20px;
+    padding-top: 4px;
+}
+
+.select {
+    font-size: 18px;
+    background-color: #e3e4e5;
+    border: 1px solid #791f1f;
+    -moz-border-radius: 3px;
+    border-radius: 5px;
+}
+
+.app__main-search {
+    display: flex;
+    float: right;
+}
+
+.app__main-search-field {
+    background-color: #e3e4e5;
+    border: 1px solid #791f1f;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.app__btn {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 10px;
+    border-width: 1px;
+    border-color: black;
+}
+
+.btn__filter {
+    padding: 10px 10px;
+    margin-left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #791f1f;
+    font-size: 20px;
+}
+
+.btn__load {
+    margin-left: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #791f1f;
+    font-size: 25px;
+}
+
+.app__main {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 50px;
+}
+
+.app__main-news {
+    max-width: 900px;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.app__main-error {
+    font: 5em 'Century';
+    color: #791f1f;
+    text-align: center;
+    font-size: 26px;
+}
+
+.app__footer {
+    position: absolute;
+    bottom: 100;
+    text-align: center;
+    width: 100%;
+    background-color: #e6e6e6;
+    border-top: 10px solid #f5f5f098;
+    height: 50px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.app__footer-link {
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    color: #a5adb8;
+}
+
+.news__item {
+    display: flex;
+    margin: 50px;
+    color: #000000;
+    font-family: Arial, Microsoft Sans Serif;
+    font-size: 20px;
+}
+
+.news__picture {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 50%;
+    height: unset;
+}
+
+.news__content {
+    text-align: left;
+    width: 70%;
+}
+
+.news__title {
+    margin: 18px;
+    padding: 0;
+    color: rgba(73, 73, 73, 0.726);
+    font-size: 25px;
+}
+
+.news__source {
+    color: #ae4b5d;
+    margin: 20px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.news__text {
+    margin: 20px;
+    padding: 0;
+    color: #2c2b2b;
+    font-size: 16px;
+}
+
+.news__link {
+    text-decoration: none;
+    color: #2c2b2b;
+    margin: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .news__picture {
+        display: none;
+    }
+    .news__content {
+        width: 100%;
+    }
+    .news__title {
+        font-size: 20px;
+    }
+    .news__source {
+        font-size: 16px;
+    }
+    .app__header {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 25%;
+    }
+    .app__header-text h1 {
+        font-size: 25px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    .app__header-text p {
+        line-height: 20px;
+        padding-top: 0px;
+    }
+    .app__main-search {
+        padding: 5px 0;
+        flex-direction: column;
+    }
+    .select {
+        font-size: 20px;
+        width: 100%;
+    }
+    .app__main-search-field {
+        margin: 0px 0px 5px 0px;
+        font-size: 20px;
+        width: 100%;
+        height: 26px;
+    }
+    .btn__filter {
+        padding: 0 10px;
+        height: 26px;
+        width: 100%;
+    }
+    .btn__load {
+        font-size: 20px;
+    }
+    .app__footer {
+        padding-bottom: 0;
+    }
+    .app__footer-link {
+        font-size: 20px;
+    }
+}

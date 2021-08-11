@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="xyz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsAPI</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="app__header">
+      <div class="app__header-text">
+        <h1>NewsAPI</h1>
+        <p>Lab 4</p>
+      </div>
+      <select id="select_sources" class="select">
+        <option value="null">All news</option>
+      </select>
+      <div class="app__main-search">
+        <input class="app__main-search-field" type="search" id="search-field" placeholder="Search...">
+        <button class="app__btn btn__filter" id="filter-btn"><span class="filter">Filter</span> </button>
+      </div>
+    </div>
+
+    <main class="app__main">
+      <div id="news" class="app__main-news"></div>
+      <h3 class="app__main-error" id="error-block" style="display: none;">There are no articles matching your request
+      </h3>
+      <button class="app__btn btn__load" id="load-btn">Load more</button>
+    </main>
+
+    <footer class="app__footer">
+      <p><a class="app__footer-link" href="https://newsapi.org/">Powered by News API</a></p>
+    </footer>
+
+    <template id="news-item-tpl">
+      <div class="news__item">
+        <div class="news__picture">
+        </div>
+        <div class="news__content">
+          <h2 class="news__title"></h2>
+          <h3 class="news__source"></h3>
+          <p class="news__text"></p>
+          <a class="news__link" href="#"> Читать дальше > </a>
+        </div>
+      </div>
+    </template>
+
+  </div>
+
+</body>
+
+</html>
